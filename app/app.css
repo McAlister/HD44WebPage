@@ -1,25 +1,339 @@
 /* app css stylesheet */
 
-.menu {
+html {
+  background: url(img/Background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+
+}
+
+img {
+
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+#MainFrame {
+
+  background-color: #fff;
+  border: 2px solid #000;
+  -moz-box-shadow: 0 0 15px #000;
+  -webkit-box-shadow: 0 0 15px #000;
+  box-shadow: 0 0 15px #000;
+
+  clear: both;
+  max-width: 1020px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  position: relative;
+}
+
+.hasGradient {
+
+  background: #c20201;
+  background: -moz-linear-gradient(top, #c20201 17%, #300000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(17%,#c20201), color-stop(100%,#300000));
+  background: -webkit-linear-gradient(top, #c20201 17%,#300000 100%);
+  background: -o-linear-gradient(top, #c20201 17%,#300000 100%);
+  background: -ms-linear-gradient(top, #c20201 17%,#300000 100%);
+  background: linear-gradient(to bottom, #c20201 17%,#300000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c20201', endColorstr='#300000',GradientType=0 );
+}
+
+#ContentFrame {
+
+  padding: 15px;
+}
+
+#SocialFrame {
+
+  border: solid 1px #000000;
+  padding: 20px 15px 15px 15px;
+  margin: 15px auto 15px auto;
+  position: relative;
+  height: 50px;
+}
+
+#LinkFrame {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#DonateFrame {
+
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+#DonateFrame button {
+
+  width: 100%;
+  border-radius: 40px;
+
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #488aba;
+  background: -moz-linear-gradient(top, #488aba 0%, #003861 65%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#488aba), color-stop(65%,#003861));
+  background: -webkit-linear-gradient(top, #488aba 0%,#003861 65%);
+  background: -o-linear-gradient(top, #488aba 0%,#003861 65%);
+  background: -ms-linear-gradient(top, #488aba 0%,#003861 65%);
+  background: linear-gradient(to bottom, #488aba 0%,#003861 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#488aba', endColorstr='#003861',GradientType=0 );
+}
+
+#DonateFrame a {
+
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
+#SocialFrame button {
+
+  border: none;
+  background: transparent;
+}
+
+#SocialFrame span {
+
+  background: #fff;
+  position: absolute;
+  display: block;
+  top: -0.8em;
+  left: 10px;
+  padding: 3px 8px;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+#RightFrame {
+
+  float: right;
+  width: 275px;
+}
+
+#LeftFrame {
+  margin: 0 290px 0 0;
+}
+
+#FooterFrame {
+
+  clear: both;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 15000;
+  padding-top: 5px;
+}
+
+#FooterFrame .LinkList {
+
+  float: right;
+  color: #fff;
   list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#FooterFrame .LinkList li {
+    display: inline;
+    font-size: 12px;
+    padding-right: 1.5em;
+}
+
+#AttributionFrame {
+
+    border: solid 1px #000000;
+    background: #fff;
+    color: #003861;
+    font-size: 12px;
+    padding: 13px;
+    line-height: 15px;
+    text-align: center;
+    width: 460px;
+    margin: 15px auto 35px auto;
+}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
 }
 
 .menu:before {
-  content: "[";
+    content: "[";
 }
 
 .menu:after {
-  content: "]";
+    content: "]";
 }
 
 .menu > li {
-  display: inline;
+    display: inline;
 }
 
 .menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+    content: "|";
+    padding-right: 0.3em;
 }
+
+/*******************
+ * Main Navigation *
+ *******************/
+
+#NavFrame {
+
+    height: 40px;
+}
+
+#NavMenu {
+    display: none;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav > ul > li {
+    text-align: center;
+}
+
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.0em;
+    line-height: 40px;
+    text-align: left;
+    width: 110px;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-left: 15px;
+    transition: .3s background-color;
+}
+
+.nav a.active {
+    color: #fff;
+    cursor: default;
+}
+
+.nav li li a {
+    font-size: .8em;
+    color: #000;
+}
+
+.nav > ul > li > a {
+    padding-left: 0;
+}
+
+.nav li li a:hover {
+    color: #c20201;
+}
+
+.nav li:hover ul {
+    display: block;
+    z-index: 15000;
+}
+
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+    background-color: #888888;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.nav li ul li {
+    display: block;
+}
+
+/**************************************
+ * Stuff to handle phones vs browsers *
+ **************************************/
+
+@media screen and (max-width: 480px) {
+
+    #RightFrame {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    #LeftFrame {
+        width: 100%;
+        margin: 0;
+    }
+
+    #NavMenu {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        background-color: #888888;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav {
+        z-index: 20000;
+        position: relative;
+    }
+
+    .nav ul {
+        background-color: #efefef;
+        width: 150px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .nav:hover ul {
+        display: block;
+    }
+
+    .nav li {
+        display: block;
+    }
+
+    .nav li a {
+        color: #000;
+    }
+
+    .nav li ul {
+        position: relative;
+        display: block;
+    }
+    .nav li ul {
+        width: inherit;
+        background-color: #efefef;
+        margin-left: 40px;
+    }
+
+    #AttributionFrame {
+
+        width: 75%;
+        text-wrap: normal;
+    }
+}
+
+

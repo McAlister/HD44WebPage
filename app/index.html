@@ -15,18 +15,144 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-  <div ng-view></div>
+<div id="MainFrame">
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div id="BannerFrame">
+
+    <img id="BannerImg" src="img/BannerFlagHands.png">
+
+  </div>
+
+  <div id="NavFrame" class="hasGradient">
+
+    <!--<li><a href="#!/view1">view1</a></li>-->
+    <div class="nav">
+
+      <div id="NavMenu" ng-click="changeClass()">&#9776; Menu</div>
+
+      <ul>
+        <li><a href="#!/view1">Home</a></li>
+        <li><a href="#!/view2">About</a></li>
+        <li><a href="#!/view1">Issues</a>
+          <ul>
+            <li><a href="#!/view2">Education</a></li>
+            <li><a href="#!/view1">Healthcare</a></li>
+            <li><a href="#!/view2">Environment</a></li>
+          </ul>
+        </li>
+        <li><a href="#!/view1">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div id="ContentFrame">
+
+    <div id="RightFrame">
+
+      <div id="DonateFrame">
+
+        <button type="button" alt="Donation Button">
+
+          <a href="https://politics.raisethemoney.com/saiken" target="_blank">
+            Donate
+          </a>
+
+        </button>
+
+      </div>
+
+      <div id="SocialFrame">
+
+        <span>Connect With Us</span>
+
+        <div id="LinkFrame" align="center">
+
+          <button type="button">
+
+            <a href="https://www.facebook.com/SimoneForColorado/" target="_blank">
+              <img src="img/facebook.png"
+                   alt="Simone Aiken on FaceBook"
+                   title="Simone Aiken on FaceBook" border="0">
+            </a>
+
+          </button>
+
+          <button type="button">
+
+            <a href="https://twitter.com/SimoneForHD44" target="_blank">
+              <img src="img/twitter.png"
+                   alt="Simone Aiken on FaceBook"
+                   title="Simone Aiken on Twitter" border="0">
+            </a>
+
+          </button>
+
+          <button type="button">
+
+            <a href="https://www.linkedin.com/in/saiken" target="_blank">
+              <img src="img/linkedin.png"
+                   alt="Simone Aiken on FaceBook"
+                   title="Simone Aiken on Linked In" border="0">
+            </a>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="LeftFrame">
+
+      <ul class="menu">
+        <li><a href="#!/view1">view1</a></li>
+        <li><a href="#!/view2">view2</a></li>
+      </ul>
+
+      <div ng-view></div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+  </div>
+
+  <div id="FooterFrame" class="hasGradient">
+
+    <ul class="LinkList">
+      <li>Terms</li>
+      <li>Privacy</li>
+    </ul>
+
+  </div>
+
+</div>
+
+<div id="AttributionFrame">
+
+  Political advertisement paid for and approved by The Fight For Facts
+
+</div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
