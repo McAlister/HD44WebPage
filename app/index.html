@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>            <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>                 <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>                 <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simone Aiken For House District 44</title>
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
@@ -22,148 +23,117 @@
 
 <div id="MainFrame">
 
-  <div id="BannerFrame">
+    <div id="BannerFrame">
 
-    <img id="BannerImg" src="img/BannerFlagHands.png">
+        <img id="BannerImg" src="img/header.png">
 
-  </div>
-
-  <div id="NavFrame" class="hasGradient">
-
-    <!--<li><a href="#!/view1">view1</a></li>-->
-    <div class="nav">
-
-      <div id="NavMenu" ng-click="changeClass()">&#9776; Menu</div>
-
-      <ul>
-        <li><a href="#!/view1">Home</a></li>
-        <li><a href="#!/view2">About</a></li>
-        <li><a href="#!/view1">Issues</a>
-          <ul>
-            <li><a href="#!/view2">Education</a></li>
-            <li><a href="#!/view1">Healthcare</a></li>
-            <li><a href="#!/view2">Environment</a></li>
-          </ul>
-        </li>
-        <li><a href="#!/view1">Contact</a></li>
-      </ul>
     </div>
 
-  </div>
+    <div id="NavFrame" class="hasGradient">
 
-  <div id="ContentFrame">
+        <!--<li><a href="#!/view1">view1</a></li>-->
+        <div class="nav">
 
-    <div id="RightFrame">
+            <div id="NavMenu" ng-click="changeClass()">&#9776; Menu</div>
 
-      <div id="DonateFrame">
+            <ul>
+                <li><a href="#!/view1">Home</a></li>
+                <li><a href="#!/view2">About</a></li>
+                <li><a href="#!/view1">Priorities</a>
+                <li><a href="#!/view1">Contact</a></li>
+            </ul>
+        </div>
 
-        <button type="button" alt="Donation Button">
+    </div>
 
-          <a href="https://politics.raisethemoney.com/saiken" target="_blank">
-            Donate
-          </a>
+    <div id="ContentFrame">
 
-        </button>
+        <div id="TopFrame">
 
-      </div>
-
-      <div id="SocialFrame">
-
-        <span>Connect With Us</span>
-
-        <div id="LinkFrame" align="center">
-
-          <button type="button">
-
-            <a href="https://www.facebook.com/SimoneForColorado/" target="_blank">
-              <img src="img/facebook.png"
-                   alt="Simone Aiken on FaceBook"
-                   title="Simone Aiken on FaceBook" border="0">
-            </a>
-
-          </button>
-
-          <button type="button">
-
-            <a href="https://twitter.com/SimoneForHD44" target="_blank">
-              <img src="img/twitter.png"
-                   alt="Simone Aiken on FaceBook"
-                   title="Simone Aiken on Twitter" border="0">
-            </a>
-
-          </button>
-
-          <button type="button">
-
-            <a href="https://www.linkedin.com/in/saiken" target="_blank">
-              <img src="img/linkedin.png"
-                   alt="Simone Aiken on FaceBook"
-                   title="Simone Aiken on Linked In" border="0">
-            </a>
-
-          </button>
+            <div ng-view></div>
 
         </div>
 
-      </div>
+        <div id="BottomFrame">
+
+            <div id="DonateFrame">
+
+                <button type="button" alt="Donation Button">
+
+                    <a href="https://politics.raisethemoney.com/saiken" target="_blank">
+                        Donate
+                    </a>
+
+                </button>
+
+            </div>
+
+            <div id="SocialFrame">
+
+                <span>Connect With Us</span>
+
+                <div id="LinkFrame" align="center">
+
+                    <button type="button">
+
+                        <a href="https://www.facebook.com/SimoneForColorado/" target="_blank">
+                            <img src="img/facebook.png"
+                                 alt="Simone Aiken on FaceBook"
+                                 title="Simone Aiken on FaceBook" border="0">
+                        </a>
+
+                    </button>
+
+                    <button type="button">
+
+                        <a href="https://twitter.com/SimoneForHD44" target="_blank">
+                            <img src="img/twitter.png"
+                                 alt="Simone Aiken on FaceBook"
+                                 title="Simone Aiken on Twitter" border="0">
+                        </a>
+
+                    </button>
+
+                    <button type="button">
+
+                        <a href="https://www.linkedin.com/in/saiken" target="_blank">
+                            <img src="img/linkedin.png"
+                                 alt="Simone Aiken on FaceBook"
+                                 title="Simone Aiken on Linked In" border="0">
+                        </a>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div id="LeftFrame">
+    <div id="FooterFrame" class="hasGradient">
 
-      <ul class="menu">
-        <li><a href="#!/view1">view1</a></li>
-        <li><a href="#!/view2">view2</a></li>
-      </ul>
-
-      <div ng-view></div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
     </div>
-
-  </div>
-
-  <div id="FooterFrame" class="hasGradient">
-
-    <ul class="LinkList">
-      <li>Terms</li>
-      <li>Privacy</li>
-    </ul>
-
-  </div>
 
 </div>
 
 <div id="AttributionFrame">
 
-  Political advertisement paid for and approved by The Fight For Facts
+    Political advertisement paid for and approved by The Fight For Facts
 
 </div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="view1/view1.js"></script>
+    <script src="view2/view2.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
 </body>
 </html>
