@@ -310,8 +310,8 @@ h2 {
         display: none;
     }
 
-    .nav:hover ul {
-        display: block;
+    ul.show {
+        display: block !important;
     }
 
     .nav li {
@@ -334,7 +334,7 @@ h2 {
 
     .rightImg {
         float: none;
-        max-width: 350px;
+        max-width: 90%;
         margin: 10px;
     }
 

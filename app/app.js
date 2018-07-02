@@ -12,4 +12,20 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/homeView'});
+
+}]).controller('myAppCtrl', ['$scope', function($scope) {
+
+    $scope.showNav = false;
+    $scope.navClass = "hide";
+    $scope.changeClass = function() {
+
+        $scope.showNav = !$scope.showNav;
+        if($scope.showNav) {
+            $scope.navClass = "show";
+        }
+        else {
+            $scope.navClass = "hide";
+        }
+    };
+
 }]);

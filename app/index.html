@@ -29,17 +29,16 @@
 
     </div>
 
-    <div id="NavFrame" class="hasGradient">
+    <div id="NavFrame" class="hasGradient" ng-controller="myAppCtrl">
 
         <div class="nav">
 
             <div id="NavMenu" ng-click="changeClass()">&#9776; Menu</div>
 
-            <ul>
-                <li><a href="#!/homeView">Home</a></li>
-                <li><a href="#!/aboutView">About</a></li>
-                <li><a href="#!/priorityView">Priorities</a>
-                <li><a href="mailto:SimoneForHD44@gmail.com">Contact</a></li>
+            <ul class="{{navClass}}">
+                <li><a ng-click="changeClass()" href="#!/homeView">Home</a></li>
+                <li><a ng-click="changeClass()" href="#!/aboutView">About</a></li>
+                <li><a ng-click="changeClass()" href="#!/priorityView">Priorities</a>
             </ul>
         </div>
 
@@ -89,16 +88,6 @@
                             <img src="img/twitter.png"
                                  alt="Simone Aiken on FaceBook"
                                  title="Simone Aiken on Twitter" border="0">
-                        </a>
-
-                    </button>
-
-                    <button type="button">
-
-                        <a href="https://www.linkedin.com/in/saiken" target="_blank">
-                            <img src="img/linkedin.png"
-                                 alt="Simone Aiken on FaceBook"
-                                 title="Simone Aiken on Linked In" border="0">
                         </a>
 
                     </button>
