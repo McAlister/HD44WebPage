@@ -6,6 +6,7 @@ angular.module('myApp', [
   'myApp.homeView',
   'myApp.aboutView',
   'myApp.priorityView',
+  'myApp.schoolView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

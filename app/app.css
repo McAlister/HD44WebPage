@@ -198,6 +198,29 @@ h2 {
     padding-right: 0.3em;
 }
 
+/* ************* *
+ * Accordion Nav *
+ * ************* */
+
+.accordion {
+    border: 1px #111111 solid;
+    padding: 5px;
+    background-color: #efefef;
+    margin-bottom: 0px;
+}
+
+.accordion span {
+    float: right;
+    margin-right: 10px;
+}
+
+.accordionBody {
+
+    padding: 0 10px 0 10px;
+    border: 1px #111111 solid;
+    min-height: 30px;
+}
+
 /*******************
  * Main Navigation *
  *******************/
