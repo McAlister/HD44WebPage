@@ -41,4 +41,14 @@ angular.module('myApp.schoolView', ['ngRoute'])
             }
         };
 
+        $scope.getChar = function(tabName) {
+
+            if ($scope.activeTab === tabName) {
+                return '-';
+            }
+            else {
+                return '+';
+            }
+        }
+
     }]);

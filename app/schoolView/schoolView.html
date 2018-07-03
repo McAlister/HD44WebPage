@@ -26,7 +26,7 @@
 </p>
 
 <h2 class="accordion" ng-click="activate('problem')">
-    <span>+</span>
+    <span>{{getChar('problem')}}</span>
     The Problem
 </h2>
 
@@ -111,19 +111,64 @@
 
 </div>
 
-</div>
-
 <h2 class="accordion" ng-click="activate('history')">
-    <span>+</span>
+    <span>{{getChar('history')}}</span>
     How We Got Here
 </h2>
 
 <div class="accordionBody" ng-show="isActiveTab('history')">
 
+    <p>
+        This is a play in three Acts. The first was passed in 1982 when voters approved the
+        <a href="https://www.cde.state.co.us/sites/default/files/documents/cdelib/librarydevelopment/publiclibraries/librarydistrictinformation/download/pdf/gallagheramendmentquestions.pdf" target="_blank">
+        Gallagher Amendment</a>.
+        This constitutional amendment set a cap on commercial property tax rates and also fixed the ratio of revenue
+        the state was allowed to raise from commercial vs residential property taxes at 55%/45%.  In 1982 Colorado
+        had a population of 3 million and was much more rural. Today, Colorado is one of the fastest growing states
+        in the nation with 5.5 million people and is increasingly urban. The high value of urban property, made worse
+        by the housing shortage, is forcing residential property tax <b>rates</b> down. This is starving rural towns of
+        revenue they need to fund their schools, hospitals, police, and fire districts all of which comes from
+        property taxes.  Residential property taxes today are among the lowest in the nation and about 1/3rd
+        the rate they were when Gallagher passed.  It is also starving urban districts, but as these are where
+        residential property values are increasing the impact is less severe.  Gallagher is projected to cut
+        residential property tax rates an additional 15%
+        <a href="https://www.denverpost.com/2018/05/03/gallagher-amendment-fix-not-in-2018/" target="_blank">
+        next year</a> taking even more money out of our school's pockets.
+    </p>
+
+    <p>
+        Then in 1992 we passed <a href="https://leg.colorado.gov/agencies/legislative-council-staff/tabor" target="_blank">
+        TABOR</a>(The Taxpayers Bill of Rights). Prior to TABOR municipalities could compensate
+        for mandatory reductions in property tax by passing other taxes. But TABOR ended this by requiring all tax
+        increases to go to a popular vote for the area affected. The assumption was that people would vote to fund
+        the important things. We did not. Additionally, TABOR requires that taxes
+        collected in excess of caps be refunded. This means that the state cannot effectively save surpluses from
+        boom years to carry it through lean years. For the past 26 years the state's per
+        capita tax revenue has not been keeping up with inflation. Our school system has borne the brunt of it.
+    </p>
+
+    <p>
+        In 2000 we passed <a href="https://www.greateducation.org/statistics-faqs/funding-faqs/amendment-23/" target="_blank">
+        Amendment 23</a> to save our schools. This amendment required that school funding keep pace
+        with inflation. It also required an extra 1% for the following ten years in order to catch per-pupil
+        funding back up with where the state had been in 1989. However, <i>it did not levy additional taxes to provide
+        this revenue</i> instead calling dibs on projected increases from our growing economy. When we hit a
+        downturn the legislature cut school funding instead - and continued cutting it year after year. Parents and
+        teachers sued the government over it in a legal battle that went all the way to the state Supreme Court.
+        Unfortunately the court saw this problem as a fundamental conflict between two amendments that it
+        could not resolve. 23 demanded funding for schools, TABOR forbade the state from raising revenue without
+        voter approval, and there are many other necessary things that are government needs to do such as fund police,
+        fire fighting, the court system, water treatment, power, maintain the roads, etc. The court told the parents to
+        pass a tax increase to raise the revenue 23 needed. In 2013 they got a proposal on the ballot that was rejected
+        by voters 65/35. Note that only about a third of Colorado's electorate has school age children at any one time.
+        This is the fundamental problem with TABOR - it relies on people supporting tax increases for vital services
+        even when they aren't personally utilizing them.
+    </p>
+
 </div>
 
 <h2 class="accordion" ng-click="activate('weed')">
-    <span>+</span>
+    <span>{{getChar('weed')}}</span>
     Didn't The Marijuana Money Fix This?
 </h2>
 
@@ -132,7 +177,7 @@
     <p>
         Sales taxes on Marijuana have raised $70 million annually for the state's schools.
         We were almost a billion dollars
-        below constitutionally mandated funding levels when legalization passed.
+        below constitutionally mandated annual funding levels when legalization passed.
         Ethical issues regarding sin taxes aside, there simply aren't enough smokers
         in Colorado to balance our budget on their backs.  The marijuana money disappears
         into our budget hole like a tic-tac into the mouth of a whale.
@@ -143,7 +188,7 @@
         Most of it is not going
         directly to the classroom as it is being spent on building new schools and dealing with
         the maintenance backlogs in existing schools.
-        For reference, Douglas county alone has a $100 million critical maintenance backlog. We are one
+        For reference, Douglas county alone has an over $100 million critical maintenance backlog. We are one
         of 64 counties in the state of Colorado and our share of the marijuana money - while much better
         than nothing - doesn't go very far.
     </p>
@@ -151,14 +196,84 @@
 </div>
 
 <h2 class="accordion" ng-click="activate('toDo')">
-    <span>+</span>
+    <span>{{getChar('toDo')}}</span>
     What Can We Do?
 </h2>
 
 <div class="accordionBody" ng-show="isActiveTab('toDo')">
 
+    <p>
+        The most important thing we can do is vote. In Colorado revenue increases can only be passed with
+        the consent of the people and that's you and me. There should be two proposals on your ballot this year -
+        one statewide and one just in Douglas County. Vote for them! This is not a drill!
+    </p>
+
+    <p>
+        As your legislator Simone can also work to reduce waste in the system. For nearly a decade we
+        have entertained proposals that this is merely a "management problem" that we could somehow fix by
+        "thinking outside the box" and "getting creative". This made us easy marks for con men selling us
+        miracles. We've thrown money away on useless nostrums like a
+        <a href="https://www.the74million.org/article/even-after-colorados-teacher-evaluation-revolution-fewer-than-one-in-1000-rated-ineffective/" target="_blank">
+        cumbersome teacher evaluation bill</a> in 2010. Today even its ardent supporters - such as school
+        superintendent Rob Stein - say that "<i>Broadly speaking,
+        I would say the law has been a failure. We have not realized the improvements that we hoped to see,
+        and it’s just added another layer of bureaucracy and hoops</i>". We need to stop failing reforms
+        and get back to basics.
+    </p>
+
+    <p>
+        There is also <a href="https://www.chieftain.com/news/politics/pressure-building-to-avert-property-tax-cuts-by-amending-colorado/article_8ace1896-221a-50fb-bf60-4a0b419d006a.html" target="_blank>">
+        bi-partisan interest in repealing or modifying the Gallagher Amendment</a> which has been really
+        hurting rural Colorado towns and fire districts.  Simone would support any effort to get a repeal or
+        beneficial modification of Gallagher onto the ballot.
+    </p>
+
 </div>
 
-<h2>
-    Don't Pay The Ransom!
+<h2 class="accordion" ng-click="activate('Ransom')">
+    <span>{{getChar('Ransom')}}</span>
+    Don't Pay The Ransom
 </h2>
+
+<div class="accordionBody" ng-show="isActiveTab('Ransom')">
+
+    <p>
+        Kim Ransom is one of a select few legislators who have a 0% rating by the
+        <a href="https://votesmart.org/interest-group/2652/rating/10285?of=rating" target="_blank">Colorado Education Association.</a>
+        She has not only consistently voted against all efforts to improve our k-12 system, but also gone beyond that in her
+        advocacy for home schooling. Consider the following bills that Kim has been a sponsor for:
+    </p>
+
+    <ul>
+        <li>
+            Every session Kim seeks to divert funds to give tax credits to parents who home school or enroll their children
+            in for-profit private schools.  See
+            <a href="https://openstates.org/co/bills/2015A/SB15-045/" target="_blank">SB15-045</a>,
+            <a href="https://openstates.org/co/bills/2016A/SB16-154/" target="_blank">SB16-154</a>,
+            <a href="https://openstates.org/co/bills/2017A/SB17-039/" target="_blank">SB17-039</a>,
+            and <a href="https://openstates.org/co/bills/2018A/SB18-083/" target="_blank">SB18-083</a>.
+        </li>
+
+        <li>
+            In her first session she authored a bill to reduced the window of compulsory education by two years,
+            from ages 6 - 17 to ages 7 - 16.
+            See <a href="https://openstates.org/co/bills/2015A/HB15-1053/" target="_blank">HB15-1053</a>.
+        </li>
+
+        <li>
+            Last year she proposed a bill to end the practice of testing or collecting metrics at the state level for student
+            performance in Social Studies.  Social Studies contains civics and American History which instruct children
+            in how our democracy works and why it works as it does.
+            See <a href="https://leg.colorado.gov/sites/default/files/documents/2017A/bills/2017a_1117_01.pdf" target="_blank">HB17-1117</a>.
+        </li>
+    </ul>
+
+    <p>
+        A good home school run by loving parents or professional tutors delivers a bespoke education specifically
+        tailored to a child's needs. It is a privilege to be able to afford to home school your children as Kim
+        did hers. But it is not something we can provide for everyone and it would be inappropriate to de-fund
+        our k-12 system further or lower our educational standards. A majority of HD 44 constituents send their
+        children to public schools and value this public service.
+    </p>
+
+</div>
