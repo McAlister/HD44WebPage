@@ -6,7 +6,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: "SansSerif";
+    font-family: "SansSerif", sans-serif;
 }
 
 body {
@@ -22,13 +22,13 @@ img {
 
 h1 {
     color: #102e82;
-    font-family: "Futura";
+    font-family: "Futura", sans-serif;
     font-weight: bold;
 }
 
 h2 {
     color: #880000;
-    font-family: "Futura";
+    font-family: "Futura", sans-serif;
     font-size: smaller;
 }
 
@@ -206,7 +206,7 @@ h2 {
     border: 1px #111111 solid;
     padding: 5px;
     background-color: #efefef;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .accordion span {
@@ -304,6 +304,15 @@ h2 {
     max-width: 400px;
     margin-left: 10px;
     margin-bottom: 5px;
+    display: inline-block;
+}
+
+.centerImg {
+
+    display: block;
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /**************************************
