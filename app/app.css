@@ -315,6 +315,9 @@ h2 {
     margin-right: auto;
 }
 
+.common li {
+    margin-bottom: 10px;
+}
 /**************************************
  * Stuff to handle phones vs browsers *
  **************************************/
