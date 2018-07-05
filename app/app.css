@@ -65,13 +65,20 @@ h2 {
     padding: 15px;
 }
 
+#BikeFrame {
+    margin-right:280px;
+}
+
 #SocialFrame {
 
     border: solid 1px #000000;
     padding: 20px 15px 15px 15px;
-    margin: 15px auto 15px auto;
+    margin: 15px 15px 15px 0;
     position: relative;
     height: 50px;
+    width: 230px;
+    float:right;
+    clear:both;;
 }
 
 #LinkFrame {
@@ -85,7 +92,11 @@ h2 {
 
     font-weight: 700;
     font-size: 26px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 240px;
+    float:right;
 }
 
 #DonateFrame button {
@@ -378,6 +389,23 @@ h2 {
 
         width: 75%;
         text-wrap: normal;
+    }
+
+    #BikeFrame {
+        margin: 10px;
+    }
+
+    #DonateFrame {
+
+        width: inherit;
+        margin: 25px 10px 10px 10px;
+        float:none;
+    }
+
+    #SocialFrame {
+        width: inherit;
+        margin: 35px 10px 10px 10px;
+        float:none;
     }
 }
 
