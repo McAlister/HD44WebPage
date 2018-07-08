@@ -1,0 +1,303 @@
+
+<h1>
+    Affordable Healthcare
+</h1>
+
+<p>
+    It is a fact that per-capita healthcare costs are rising precipitously in America as compared to other countries.
+    To add insult to injury the money isn't even getting us better results - we have shorter life spans and
+    generally poorer health than many other first world countries.
+    In the spirit of never letting a crisis go to waste a wide range of people want to assure you that this is caused
+    by something they already hated and can only be solved by doing something they wanted to do anyway.
+</p>
+
+<p>
+    When debugging a broken system the starting questions are always, "When did this start happening?" and
+    "What changed at that time?" Nobody is asking those questions.
+    <!--The big three talking points are tort reform,-->
+    <!--insurance companies, and lack of competition among insurance companies.  But we have had private for-profit-->
+    <!--insurance companies since 1920 with the same tort landscape and state-by-state regulations,-->
+    <!--yet our per-capita costs didn't start dramatically diverging from other first world countries until the 1980s.-->
+    <!--So there is more going on here than the usual suspects.-->
+</p>
+
+
+<h2 class="accordion" ng-click="activate('history')">
+    <span>{{getChar('history')}}</span>
+    Historical Health Spending
+</h2>
+
+<div class="accordionBody" ng-show="isActiveTab('history')">
+
+    <p>How did we get here?</p>
+
+    <img class="rightImg" src="img/perCapitaHealthSpendUS.jpg" title="Graph from OCED data">
+
+    <p>
+        Since 1970 inflation is responsible for roughly quintupling prices. We averaged $355
+        per person per year in health care expenditures back then. In 2016 we spent $10,348 per capita.
+        That's about six times what inflation could explain. We've gained 4 years of life expectancy for our money,
+        but others countries started ahead of us and have gained more in the same period for vastly less money.
+        Our current system of multi-payer private insurance has been around since roughly the 1920's.
+    </p>
+
+    <p>
+        Everyone likes comparing our costs to Universal Health Care(UHC) countries today, but 40 years ago
+        we were not so different from them.  What changed?  New technologies are increasing costs for
+        everyone, but other places have the same technology we do without the high price tags.
+    </p>
+
+    <p>
+        It would be a very strong argument for UHC if what changed was that the other countries
+        switched to UHC right around that time. Unfortunately the UK founded its NHS in 1948. Canada's system
+        was passed in 1968 though prior systems were similar. Sweden's model of local responsibility
+        dates back to the middle ages with formal regulation of the local hospital
+        boards passing in 1864.  Meanwhile the Swiss had very capitalist multi-payer till the mid-90's
+        when they passed reforms that our own ACA is largely based on. Now we have basically the same
+        system as them but we pay twice as much and die about 5 years sooner. So what we have is
+        lots of countries all tackling this problem in very different ways whose common theme is they
+        are now getting better results for much less money than we are. <i>But they weren't in the '70s.</i>
+        So it is possible to do much better than we are now without fundamentally altering our system. This means
+        that your local state representatives can make a meaningful difference even if they can't pass Single Payer.
+    </p>
+
+    <p>
+        When the taxpayer is on the hook for increasing health costs the government has a stake in monitoring
+        costs, identifying when there are specific increases, investigating, and seeking to remedy them if
+        possible. A UHC nation will always do these things in the name of reducing government waste and spending
+        tax revenue wisely. The bulk of their savings isn't due to being Single Payer - its because of all the
+        <i>other</i> things they do to save money.  Things we could do if we wanted to.
+    </p>
+
+    <p style="text-align: center;">
+        <b>We don't have to sit around waiting for Single Payer to start fixing things.</b>
+    </p>
+
+</div>
+
+<h2 class="accordion" ng-click="activate('dtc')">
+    <span>{{getChar('dtc')}}</span>
+    Eliminate Direct To Consumer Drug Advertising
+</h2>
+
+<div class="accordionBody" ng-show="isActiveTab('dtc')">
+
+    <p>
+        Estimated Savings: <a href="https://www.medscape.com/viewarticle/806673" target="_blank">$150 - $200 Billion</a>
+    </p>
+
+    <img class="rightImg" src="img/drugSpend.png" title="Drug Spend Over Time">
+
+    <p>
+        Only two countries in the world permit pharmaceutical companies to bypass doctors and advertise directly
+        to patients, America and New Zealand.
+        <a href="https://www.academia.edu/278465/Chronology_of_Direct-to-Consumer_Advertising_Regulation_in_the_United_States" target="_blank">
+        America lifted the ban on DTC drug ads in 1985</a>. Shortly afterward
+        drug expenditures in the United States started rapidly increasing from $12B a year in 1980 to $340B in 2016.
+        <b>In 1980 prescription drugs accounted for about 2.7% of total health spend.  Today it is over 10% </b>making
+        pharmaceuticals a driving force behind our high costs. The
+        <a href="https://www.ama-assn.org/content/ama-calls-ban-direct-consumer-advertising-prescription-drugs-and-medical-devices" target="_blank">
+            American Medical Association advocates for a ban on DTC advertising</a>.
+    </p>
+
+    <p>
+        Direct to consumer drug advertising increases health spend
+        <a href="https://www.npr.org/sections/health-shots/2017/04/29/525877472/those-tv-drug-ads-distract-us-from-the-medical-care-we-need" target="_blank">
+            in many ways
+        </a>:
+    </p>
+
+    <ul class="common">
+        <li>
+            It convinces consumers that they need drugs they don't actually need.  We know that doctors are susceptible
+            to this pressure both from
+            <a href="https://www.sciencedaily.com/releases/2014/03/140314111348.htm" target="_blank">studies</a>
+            done on it and because of the difficulty in getting them to stop prescribing antibiotics for viral
+            diseases even though this is
+            <a href="https://www.cdc.gov/media/releases/2016/p0503-unnecessary-prescriptions.html" target="_blank">
+            creating super-bugs.</a> Pushing back on patient demand is <i>hard</i>.
+        </li>
+
+        <li>
+            It creates a preference in patients for the most expensive drug available to treat a condition because
+            that is the one they saw the ad for.
+        </li>
+
+        <li>
+            Every drug has a risk of an Adverse Drug Reaction(ADR). ADRs
+            <a href="https://www.wpi.edu/news/using-data-science-help-predict-adverse-drug-reactions" target="_blank">
+            cost over $170 billion and kill over 100 thousand</a> Americans every year. Unnecessary prescriptions
+            contribute to that total with hospitalizations and ER visits.  This study from 2013 estimated that
+            <a href="https://www.sciencedirect.com/science/article/pii/S1319016413000509" target="_blank">
+            between 5%-10% of hospital admissions and rising</a> in the US are due to ADRs.
+
+        </li>
+
+        <li>
+            It encourages the scheduling of costly office visits for the sole purpose of getting or
+            renewing an unnecessary prescription. Sometimes several if a patient is willing to go to different doctors
+            in the search of someone who will prescribe what they want.
+        </li>
+
+        <li>
+            A frequent side effect of prescription drug use is weight gain which also increases health costs.
+        </li>
+    </ul>
+
+    <p>
+        A particularly deadly part of this is the opioid epidemic which killed 442 Coloradans in 2016.
+        9% of prescriptions filled in Colorado in 2016 were for opioids.
+    </p>
+
+</div>
+
+<h2 class="accordion" ng-click="activate('fat')">
+    <span>{{getChar('fat')}}</span>
+    The Obesity Epidemic
+</h2>
+
+<div class="accordionBody" ng-show="isActiveTab('fat')">
+
+    <p>
+        Estimated Savings: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2891924/" target="_blank">$170 - $200 Billion</a>
+    </p>
+
+    <img class="rightImg" src="img/obesityGraph.jpg" title="Drug Spend Over Time">
+
+    <p>
+        Another thing that started growing rapidly in 1980 was America's waistline.  Today we are
+        <a href="https://renewbariatrics.com/obesity-rank-by-countries/" target="_blank"> one of the fattest
+        nations in the world</a> and over 70% of Americans are overweight or obese.  This has substantial cost impacts.
+        Experts estimate that the
+        <a href="https://www.cdc.gov/obesity/data/adult.html" target="_blank">financial burden of obesity</a>
+        is at least $1,429 per individual per year in 2008 dollars. Adjusted for inflation and increased obesity
+        that's roughly $170B dollars per year.  When you include costs associated with being merely overweight
+        (over $200 per person per year) you exceed $200B.
+    </p>
+
+    <p>
+        On the upside, Colorado is the thinnest state in the nation with "only" 21% of adults and 15% of children
+        being obese.  This helps explain why
+        <a href="https://www.kff.org/other/state-indicator/health-spending-per-capita/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Health%20Spending%20per%20Capita%22,%22sort%22:%22asc%22%7D" target="_blank">
+        Colorado has one of the lowest per-capita annual health costs</a> in the nation. But that number has been
+        steadily ticking upward over time and we need to reverse that trend.
+    </p>
+
+</div>
+
+<h2 class="accordion" ng-click="activate('test')">
+    <span>{{getChar('test')}}</span>
+    Unnecessary Testing
+</h2>
+
+<div class="accordionBody" ng-show="isActiveTab('test')">
+
+    <p>
+        Estimated Savings: <a href="http://www.healthcarefinancenews.com/news/unnecessary-medical-tests-treatments-cost-200-billion-annually-cause-harm" target="_blank">$150 - $200 Billion</a>
+    </p>
+
+
+    <img class="rightImg" src="img/testing.jpg" title="Drug Spend Over Time">
+
+    <p>
+        97% of doctors admit to knowingly ordering unnecessary tests and studies suggest that we spend over
+        $200 Billion on them every year.  Unnecessary testing isn't just a waste of money, it can also be harmful
+        to patients.  A CT scan exposes you to as much radiation as 400 chest X-rays.  This is unhealthy and increases
+        your future risk of
+        cancer—
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418594/" target="_blank">
+        particularly in children</a>—so it should not be done without need.
+    </p>
+
+    <p>
+        The most expensive form of unnecessary testing is medical imaging.  The CT scan was invented in 1972,
+        while the MRI was invented in 1977.  Both had to complete clinical trials before they could be commercialized
+        which puts them in play in the 1980s.  Those two tests alone are estimated as
+        <a href="https://www.cbsnews.com/news/overtreatment-in-action-30-billion-wasted-on-unnecessary-mri-ct-scans/" target="_blank">
+        wasting $30 billion</a> annually.
+    </p>
+
+    <p>
+
+    </p>
+
+</div>
+
+<h2 class="accordion" ng-click="activate('tort')">
+    <span>{{getChar('tort')}}</span>
+    Tort Reform
+</h2>
+
+<div class="accordionBody" ng-show="isActiveTab('tort')">
+
+    <p>
+        Estimated Savings: <a href="http://truecostofhealthcare.org/malpractice/" target="_blank">$0-$10 Billion</a>
+    </p>
+
+    <img class="rightImg" src="img/penny.jpg" title="Drug Spend Over Time">
+
+    <p>
+        If we passed a law outlawing all malpractice suits tomorrow we would save less than $10 billion dollars.
+        That is about three tenths of a percent of our annual health spend.  So for every dollar you pay in health
+        care costs you'd save, on average, a third of a penny.  There simply isn't that much money
+        being spent on it for it to be a meaningful contributor to the problem.
+    </p>
+
+    <p>
+        States that have passed even very
+        draconian tort reforms are not seeing a bend in the cost curve.  Can you tell when Texas passed tort
+        reform from <a href="https://www.kff.org/other/state-indicator/health-spending-per-capita/?activeTab=graph&currentTimeframe=0&startTimeframe=23&selectedRows=%7B%22states%22:%7B%22texas%22:%7B%7D%7D%7D&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D" target="_blank">
+        this graph</a>?  It was September 1st, 2003.  And it did lower the number of suits and the payouts for
+        victims of malpractice substantially. That is just such a small part of the system's costs that it simply
+        doesn't matter to anyone ... except the victims of malpractice. It matters to them a great deal.
+    </p>
+
+    <p>
+        The only possible way that tort reform would matter was if it reduced unnecessary testing.  We spent 20 times
+        as much money on that as we do on medical lawsuits. If doctors really were ordering test just in case they
+        needed them to defend themselves in court then they would stop once we passed tort reform.  But they aren't.
+        They never were.  To quote general surgeon,
+        <a href="https://www.newyorker.com/magazine/2015/05/11/overkill-atul-gawande" target="_blank">Atul Gawande</a>
+        "<i>I am far more concerned about doing too little than doing too much. It’s the scan, the test, the
+        operation that I <b>should</b> have done that sticks with me—sometimes for years.</i>".
+        They aren't afraid of being sued.  They are afraid of making a mistake that someone else has to
+        suffer or die for.
+    </p>
+
+    <p>
+        Tort reform also doesn't address the category of tests that are unnecessary because they are
+        duplicative - another doctor already ordered that test but the results are not available to the current doctor.
+        Nor would it help situations where
+        <a href="https://www.scientificamerican.com/article/unnecessary-tests-and-treatment-explain-why-health-care-costs-so-much/" target="_blank">
+        doctors are given financial incentives to order more tests</a>. In some cases "fear of a malpractice suit" is
+        used to justify behavior that is actually driven by profit motive.  Three years after Texas passed tort reform
+        a study found that one of it's cities had the highest per-capita Medicare costs in the nation. Investigation
+        of the town found that when doctors also own the labs that do the tests ... well ...
+        <a href="https://www.newyorker.com/magazine/2009/06/01/the-cost-conundrum" target="_blank">
+        they order a lot more tests</a>.  And it probably isn't even conscious. It's just a conflict of interest that
+        subtly influences their decision making in situations that aren't clear cut.
+    </p>
+
+</div>
+
+<h2 class="accordion" ng-click="activate('Simone')">
+    <span>{{getChar('Simone')}}</span>
+    What Will Simone Do?
+</h2>
+
+<div class="accordionBody" ng-show="isActiveTab('Simone')">
+
+</div>
+
+<h2 class="accordion" ng-click="activate('Ransom')">
+    <span>{{getChar('Ransom')}}</span>
+    Don't Pay The Ransom
+</h2>
+
+<div class="accordionBody" ng-show="isActiveTab('Ransom')">
+
+</div>
+
+<p>
+    * Savings estimates are nation wide numbers because Colorado specific numbers are hard to find.
+</p>

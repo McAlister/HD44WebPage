@@ -7,6 +7,7 @@ angular.module('myApp', [
   'myApp.aboutView',
   'myApp.priorityView',
   'myApp.schoolView',
+  'myApp.healthView',
   'myApp.environmentView',
   'myApp.version'
 ]).

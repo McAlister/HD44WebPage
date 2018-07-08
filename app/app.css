@@ -73,7 +73,7 @@ h2 {
 
     border: solid 1px #000000;
     padding: 20px 15px 15px 15px;
-    margin: 15px 15px 15px 0;
+    margin: 15px 18px 15px 0;
     position: relative;
     height: 50px;
     width: 230px;
@@ -93,8 +93,8 @@ h2 {
     font-weight: 700;
     font-size: 26px;
     margin-bottom: 30px;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-top: 33px;
+    margin-right: 23px;
     width: 240px;
     float:right;
 }
