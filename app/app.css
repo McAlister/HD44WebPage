@@ -443,8 +443,16 @@ h2 {
     .modalBtn {
         display: inline-block;
         position: absolute;
-        top: 0px;
-        right: 0px;
+        top: 0;
+        right: 0;
+    }
+
+    .modalContent {
+        margin: 0;
+        padding: 0;
+        max-width: 800px;
+        background-color: #e9ebee;
+        position: relative;
     }
 }
 
