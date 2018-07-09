@@ -49,6 +49,16 @@ angular.module('myApp.healthView', ['ngRoute'])
             else {
                 return '+';
             }
-        }
+        };
+
+        // //////////// //
+        // Modal Pop Up //
+        // //////////// //
+
+        $scope.showModal = false;
+        $scope.swapModal = function() {
+            $scope.showModal = ! $scope.showModal;
+        };
+
 
     }]);
