@@ -438,8 +438,8 @@ h2 {
         width: inherit;
         margin: 35px 10px 10px 10px;
         float:none;
+        padding: 20px 5px 5px 5px;
     }
-
     .modalBtn {
         display: inline-block;
         position: absolute;
