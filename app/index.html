@@ -24,9 +24,9 @@
 <div id="MainFrame">
 
     <div id="BannerFrame">
-
-        <img id="BannerImg" src="img/header.png">
-
+        <a ng-click="changeClass()" href="#!/homeView">
+            <img id="BannerImg" src="img/header.png">
+        </a>
     </div>
 
     <div id="NavFrame" class="hasGradient" ng-controller="myAppCtrl">
@@ -39,6 +39,7 @@
                 <li><a ng-click="changeClass()" href="#!/homeView">Home</a></li>
                 <li><a ng-click="changeClass()" href="#!/aboutView">About</a></li>
                 <li><a ng-click="changeClass()" href="#!/priorityView">Priorities</a>
+                <li><a href="https://politics.raisethemoney.com/saiken" target="_blank">Donate</a></li>
             </ul>
         </div>
 
